@@ -1,4 +1,3 @@
-# Выполнение тестовых заданий для Minbox
 # C# Задача про площади треугольника и круга
 
 Не совсем понял этот пункт:
@@ -21,8 +20,16 @@ var triangle = new Triangle(aSide, bSide, cSide);
 Для проверки является ли треугольник прямоугольным используется метод `IsTriangleRectangular()`
 
 Где `aSide` — значение первой стороны треугольника, `bSide` и `cSide`, соответсвенно, значения второй и третьей стороны.
+# SQL Задача
+- InicializationTestBase — запрос на создание тестовой БД, таблицы и данные
 
-
+- MinboxTestQuery — запрос с ответом на задачу
+## Для удобства выведу запрос с ответом на задачу в readme:
+```
+SELECT ProductName, CategoryName FROM CategoryProduct 
+RIGHT JOIN Product ON Product.ProductId = CategoryProduct.ProductId
+LEFT JOIN Category ON Category.CategoryId = CategoryProduct.CategoryId
+```
 
  
 
